@@ -1,0 +1,225 @@
+.manageUserContainer {
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 12px;
+  }
+  
+  .manageUserContainer h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* Top toolbar (Search + Add) */
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .searchBar {
+    flex: 1;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .addUserBtn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  
+  .addUserBtn:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Table */
+  .employeeTable {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .employeeTable table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  .employeeTable th,
+  .employeeTable td {
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .employeeTable th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .editBtn,
+  .deleteBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 6px;
+  }
+  
+  .editBtn:hover {
+    color: #2196f3;
+  }
+  
+  .deleteBtn:hover {
+    color: #f44336;
+  }
+  
+  /* Popup Overlay (shared) */
+  .popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  /* Add/Edit Modal */
+  .addUserContent {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+  }
+  
+  .addUserContent h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .addUserForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .addUserForm label {
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .addUserForm input,
+  .addUserForm select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  .addUserForm button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 15px;
+  }
+  
+  .addUserForm button:hover {
+    background: #e64a19;
+  }
+  
+  /* Delete Confirmation Modal */
+  .deleteConfirmContent {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .deleteConfirmContent h2 {
+    font-size: 20px;
+    color: #d32f2f;
+    margin-bottom: 15px;
+  }
+  
+  .deleteForm {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .deleteForm p {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .deleteForm input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .deleteForm button {
+    margin-top: 5px;
+    padding: 10px;
+    background: #f44336;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 15px;
+  }
+  
+  .deleteForm button:hover {
+    background: #d32f2f;
+  }
+  
+  /* Close button (X) */
+  .closePopup {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  

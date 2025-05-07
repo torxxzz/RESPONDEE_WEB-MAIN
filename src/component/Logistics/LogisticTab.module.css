@@ -1,0 +1,339 @@
+.complaintContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: #f8f8f8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.complaintBody {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.subSidebar {
+  width: 240px;
+  background: #fff;
+  border-right: 1px solid #e0e0e0;
+  padding: 16px;
+  border-radius: 12px 0 0 12px;
+}
+
+.subSidebarList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subSidebarList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.subSidebarList li:hover {
+  background: #f0f0f0;
+}
+
+.activeSub {
+  background: #ff5722;
+  color: #fff;
+}
+
+.countBadge {
+  background: red;
+  color: white;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 12px;
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.labelHeader {
+  margin-top: 12px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 120px;
+}
+
+.labelDropdown {
+  margin-top: 5px;
+  padding-left: 16px;
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.labelDropdown li {
+  font-size: 13px;
+  padding: 6px 0;
+  cursor: pointer;
+  color: #444;
+}
+
+.labelDropdown li:hover {
+  color: #ff5722;
+}
+
+/* MAIN COLUMN */
+.complaintColumn {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.searchBar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 8px 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.searchBar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 10px;
+  flex: 1;
+}
+
+.dateFilterWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dateFilter {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.customDatePicker {
+  border: none;
+  outline: none;
+  margin-left: 6px;
+  background: transparent;
+  font-size: 14px;
+  width: 110px;
+}
+
+.refreshIcon, .filterIcon {
+  cursor: pointer;
+  color: #444;
+  transition: 0.2s ease;
+}
+
+.refreshIcon:hover, .filterIcon:hover {
+  color: #ff5722;
+}
+
+.filterDropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  padding: 10px;
+  z-index: 10;
+}
+
+.filterDropdown div {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.filterDropdown div:hover {
+  background: #f5f5f5;
+}
+
+/* LIST */
+.complaintList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.complaintItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.complaintItem:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.unreadComplaint {
+  background: #fff8f4;
+}
+
+.statusIcon {
+  margin-top: 2px;
+}
+
+.complaintDetails {
+  flex: 1;
+}
+
+.complaintDetails strong {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.subject {
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 3px;
+}
+
+.preview {
+  font-size: 13px;
+  color: #555;
+  display: block;
+}
+
+.categoryLabel {
+  background: #f0f0f0;
+  color: #333;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.date {
+  font-size: 13px;
+  color: #999;
+  white-space: nowrap;
+}
+
+/* EXPANDED DETAIL VIEW */
+.complaintDetailExpanded {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  flex: 1;
+  margin: 20px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.detailHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kebabWrap {
+  position: relative;
+}
+
+.kebabDropdown {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  z-index: 50;
+}
+
+.kebabDropdown div {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.kebabDropdown div:hover {
+  background: #f2f2f2;
+}
+
+.detailDescription {
+  font-size: 14px;
+  color: #555;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+.labelSelector {
+  margin-top: 20px;
+}
+
+.labelSelector select {
+  margin-left: 10px;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* BUTTONS */
+.verifyBtn {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.verifiedLabel {
+  margin-top: 20px;
+  color: #4caf50;
+  font-weight: bold;
+}

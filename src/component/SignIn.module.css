@@ -1,0 +1,136 @@
+/* 🌍 Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* 📦 Two-Column Layout */
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🖼 Left Side - Image */
+.imageSection {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    }
+
+.image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    mix-blend-mode: multiply;
+    margin-right: 0%;
+}
+
+/* 📦 Right Side - Sign-in Box */
+.signInBox {
+    flex: 1;
+    max-width: 400px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #ddd;
+    margin-right: 3%;
+    height: 550px;
+}
+
+
+/* 🔹 Respondee Logo */
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ff5722; /* Respondee theme */
+    margin-top: 40px;
+}
+
+/* 🔹 Headings */
+.title {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* 🔹 Input Fields */
+.input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #ff5722;
+    box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+}
+
+/* 🔹 Sign In Button */
+.signInButton {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #ff5722;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.signInButton:hover {
+    background: #e64a19;
+}
+
+/* 🔹 Options (Checkbox & Forgot Password) */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* 🔹 Checkbox */
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.checkbox {
+    margin-right: 5px;
+}
+
+/* 🔹 Forgot Password */
+.forgotPassword {
+    color: #ff5722;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.forgotPassword:hover {
+    text-decoration: underline;
+}
